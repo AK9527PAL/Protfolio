@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .dropdown:hover>.dropdown-menu,
+        .dropend:hover>.dropend-menu {
+            display: block;
+
+        }
+
+        .dropend:hover>.dropend-menu {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbr start -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color:#ade4f0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="100" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML&CSS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY1
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task1.html">TASK1</a></li>
+                                    <li><a class="dropdown-item" href="task2.html">TASK2</a></li>
+                                    <li><a class="dropdown-item" href="task3.html">TASK3</a></li>
+                                    <li><a class="dropdown-item" href="task4.html">TASK4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY2
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task5.html">TASK5</a></li>
+                                    <li><a class="dropdown-item" href="task6.html">TASK6</a></li>
+                                    <li><a class="dropdown-item" href="task7.html">TASK7</a></li>
+                                    <li><a class="dropdown-item" href="task8.html">TASK8</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            JAVA-SCRIPT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="js1.html">TASK1</a></li>
+                            <li><a class="dropdown-item" href="js2.html">TASK2</a></li>
+                            <li><a class="dropdown-item" href="js3.html">TASK3</a></li>
+                            <li><a class="dropdown-item" href="js4.html">TASK4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+    <div class="container my-5">
+        <p>kfsufwnf</p>
+    </div>
+
+    <h1 style="text-align: center;">Calculator</h1>
+    <div class="container-md-5">
+        <div class="row">
+            <div class="col-md-3">
+                <p> </p>
+            </div>
+            <div class="col-md-6" style="border: solid; text-align: center; margin: 5px; background-color: aqua;">
+                    <div class = "col-md-6" style = "margin : 9px 15px 0px 15px">
+                        <input type="text" class="form-control" id="t1" name="t1" placeholder="    " style = "width : 707px; margin-left: 8px; ">
+                    </div>
+                <div class="row" style=" margin: 10px;">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button class="form-control" onclick="click1('9')">9</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="form-control" onclick="click1('8')">8</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="form-control" onclick="click1('7')">7</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4" style="margin-top: 9px;">
+                                <button class="form-control" onclick="click1('6')">6</button>
+                            </div>
+                            <div class="col-md-4" style="margin-top: 9px;">
+                                <button class="form-control" onclick="click1('5')">5</button>
+                            </div>
+                            <div class="col-md-4" style="margin-top: 9px;">
+                                <button class="form-control" onclick="click1('4')">4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="form-control" style = "height : 82px" onclick="equal()">=</button>
+                    </div>
+
+                </div>
+
+                <div class="row" style="text-align: center; margin: 10px;">
+                    <div class="col-md-3">
+                        <button class="form-control" onclick="click1('3')">3</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="form-control" onclick="click1('2')">2</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="form-control" onclick="click1('1')">1</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="form-control" onclick="click1('*')">*</button>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center; margin: 10px;">
+                    <div class="col-md-3">
+                        <button class="form-control" onclick="click1('0')">0</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="form-control" onclick="click1('+')">+</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="form-control" onclick="click1('-')">-</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="form-control" onclick="click1('/')">/</button>
+                    </div>
+                </div>
+                <div class="row" style="margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
+                    <div class="col-md-6">
+                        <button class="form-control" onclick="clear1()">clear</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="form-control" onclick="backspace1()">backspace</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p> </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var st="";
+        function click1(a){
+            st=document.getElementById('t1').value
+            document.getElementById('t1').value=st+a;
+        }
+
+
+        function equal(){
+            st=eval(document.getElementById('t1').value);
+            document.getElementById('t1').value=st;
+        }
+
+        function clear1(){
+            document.getElementById('t1').value= "";
+        }
+        function backspace1(){
+            var y=document.getElementById('t1').value;
+            var x=y.length;
+            y=y.slice(0,x-1);
+            document.getElementById('t1').value=y;
+        }
+
+
+    </script>
+</body>
+</html>

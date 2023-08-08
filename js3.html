@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .dropdown:hover>.dropdown-menu,
+        .dropend:hover>.dropend-menu {
+            display: block;
+
+        }
+
+        .dropend:hover>.dropend-menu {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbr start -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color:#ade4f0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="100" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML&CSS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY1
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task1.html">TASK1</a></li>
+                                    <li><a class="dropdown-item" href="task2.html">TASK2</a></li>
+                                    <li><a class="dropdown-item" href="task3.html">TASK3</a></li>
+                                    <li><a class="dropdown-item" href="task4.html">TASK4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY2
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task5.html">TASK5</a></li>
+                                    <li><a class="dropdown-item" href="task6.html">TASK6</a></li>
+                                    <li><a class="dropdown-item" href="task7.html">TASK7</a></li>
+                                    <li><a class="dropdown-item" href="task8.html">TASK8</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            JAVA-SCRIPT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="js1.html">TASK1</a></li>
+                            <li><a class="dropdown-item" href="js2.html">TASK2</a></li>
+                            <li><a class="dropdown-item" href="js3.html">TASK3</a></li>
+                            <li><a class="dropdown-item" href="js4.html">TASK4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+    <div class="container my-5">
+        <p>kfsufwnf</p>
+    </div>
+    <div class="container my-5">
+        <table class="table table-dark table-striped">
+            <tr>
+                <th>Item_id</th>
+                <th>item_name</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Apple</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>banana</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Pine-apple</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Mango</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="container">
+        <div class="col-12">
+            Item_id
+            <input type="text" placeholder="enter item id" class="form-control" id="ak1">
+        </div>
+        <div class="col-12">
+            Quantity
+            <input type="text" placeholder="enter item Quantity" class="form-control" id="ak2">
+        </div>
+    </div>
+    <div class="container my-3">
+        <button class="btn btn-primary" onclick="add_function()"> ADD</button>
+    </div>
+
+    <div class="container my-5" id="ak3">
+        <table id="pal" class="table table-striped">
+            <tr>
+                <th>Item_id</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </table>
+        <h1 id="t">Total_amount -0</h1>
+    </div>
+    <script>
+        let daam = {
+            "001": "100",
+            "002": "200",
+            "003": "300",
+            "004": "400"
+        };
+        let Total_amount = 0;
+        function add_function() {
+            let a = document.getElementById("ak1").value;
+            let b = document.getElementById("ak2").value;
+            let Price = daam[a] * b;
+            Total_amount += Price;
+            if (a != "" && b != "") {
+                if (daam[a] != null) {
+                    let c = document.createElement("tr");
+                    let d = document.createElement("td");
+                    d.innerHTML = a;
+                    c.appendChild(d);
+
+                    let e = document.createElement("td");
+                    e.innerHTML = b;
+                    c.appendChild(e);
+
+                    let f = document.createElement("td");
+                    f.innerHTML = Price;
+                    c.appendChild(f);
+
+                    document.getElementById("pal").appendChild(c);
+
+                    document.getElementById("t").innerHTML = "Total_amount -" + Total_amount;
+                }
+                else{
+                    window.alert("invalid item_id or quantity!!")
+                }
+            }
+            else {
+                window.alert("plz enter item_id and Quantity!");
+            }
+        }
+    </script>
+</body>
+</html>

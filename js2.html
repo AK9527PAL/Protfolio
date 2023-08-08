@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .dropdown:hover>.dropdown-menu,
+        .dropend:hover>.dropend-menu {
+            display: block;
+
+        }
+
+        .dropend:hover>.dropend-menu {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbr start -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color:#ade4f0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="100" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML&CSS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY1
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task1.html">TASK1</a></li>
+                                    <li><a class="dropdown-item" href="task2.html">TASK2</a></li>
+                                    <li><a class="dropdown-item" href="task3.html">TASK3</a></li>
+                                    <li><a class="dropdown-item" href="task4.html">TASK4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY2
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task5.html">TASK5</a></li>
+                                    <li><a class="dropdown-item" href="task6.html">TASK6</a></li>
+                                    <li><a class="dropdown-item" href="task7.html">TASK7</a></li>
+                                    <li><a class="dropdown-item" href="task8.html">TASK8</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            JAVA-SCRIPT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="js1.html">TASK1</a></li>
+                            <li><a class="dropdown-item" href="js2.html">TASK2</a></li>
+                            <li><a class="dropdown-item" href="js3.html">TASK3</a></li>
+                            <li><a class="dropdown-item" href="js4.html">TASK4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+    <div class="container my-5">
+        <p>kfsufwnf</p>
+    </div>
+    <div class="container" id="ak">
+        <h1 style="text-align: center; background-color: aqua;">MY LIST</h1>
+        <table class="table table-dark table-striped">
+            <tbody id = 'pal'></tbody>
+        </table>
+        <div class="container">
+            <button class="btn btn-primary" onclick="click0()">All_user</button>
+            <button class="btn btn-primary" onclick="click1()">0-18</button>
+            <button class="btn btn-primary" onclick="click2()">18-30</button>
+            <button class="btn btn-primary" onclick="click3()">30+</button>
+        </div>
+
+    </div>
+
+    <script>
+        const Users = [
+            { firstname: "rohit", lastname: "pal", age: 18 },
+            { firstname: "suraj", lastname: "yadav", age: 28 },
+            { firstname: "mohit", lastname: "pal", age: 8 },
+            { firstname: "sanjay", lastname: "yadav", age: 21 },
+            { firstname: "akash", lastname: "pal", age: 19 },
+            { firstname: "vivek", lastname: "pal", age: 15 },
+            { firstname: "suresh", lastname: "dubey", age: 7 },
+            { firstname: "mahesh", lastname: "dalle", age: 30 },
+            { firstname: "ankit", lastname: "jaisawal ", age: 40 },
+            { firstname: "sagar", lastname: "gupta", age: 38 },
+            { firstname: "neeraj", lastname: "pal", age: 29 },
+        ];
+
+        function all1(arr) {
+            document.getElementById('pal').innerHTML = '<tr><th>First_name</th><th>Last_name</th><th>Age</th></tr>';
+            for (let i = 0; i < arr.length; i++) {
+                let row = document.createElement("tr");
+                let cell1 = document.createElement("td");
+                cell1.innerHTML = arr[i].firstname;
+                row.appendChild(cell1);
+
+                let cell2 = document.createElement("td");
+                cell2.innerHTML = arr[i].lastname;
+                row.appendChild(cell2);
+
+                let cell3 = document.createElement("td");
+                cell3.innerHTML = arr[i].age;
+                row.appendChild(cell3);
+                document.getElementById('pal').appendChild(row);
+            }
+        }
+        
+        // all1(Users);
+        function click0(){
+            all1(Users);
+        }
+        function click1(){
+            const output=Users.filter((x)=> x.age<18);
+            all1(output);
+        }
+        function click2(){
+            const output=Users.filter((x)=> x.age<30 && x.age>18);
+            all1(output);
+        }
+        function click3(){
+            const output=Users.filter((x)=> x.age>30);
+            all1(output);
+        }
+    </script>
+</body>
+</html>

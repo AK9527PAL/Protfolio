@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .dropdown:hover>.dropdown-menu,
+        .dropend:hover>.dropend-menu {
+            display: block;
+
+        }
+
+        .dropend:hover>.dropend-menu {
+            position: absolute;
+        }
+    </style>
+    <script>
+        function submit(){
+            let x=document.getElementById("name").value;
+            let y=eval(x);
+            document.getElementById('h3').innerHTML = document.getElementById('h3').innerHTML + " " + y;
+        }
+    </script>
+</head>
+<body>
+    <!-- navbr start -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color:#ade4f0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="100" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML&CSS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY1
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task1.html">TASK1</a></li>
+                                    <li><a class="dropdown-item" href="task2.html">TASK2</a></li>
+                                    <li><a class="dropdown-item" href="task3.html">TASK3</a></li>
+                                    <li><a class="dropdown-item" href="task4.html">TASK4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY2
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task5.html">TASK5</a></li>
+                                    <li><a class="dropdown-item" href="task6.html">TASK6</a></li>
+                                    <li><a class="dropdown-item" href="task7.html">TASK7</a></li>
+                                    <li><a class="dropdown-item" href="task8.html">TASK8</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            JAVA-SCRIPT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="js1.html">TASK1</a></li>
+                            <li><a class="dropdown-item" href="js2.html">TASK2</a></li>
+                            <li><a class="dropdown-item" href="js3.html">TASK3</a></li>
+                            <li><a class="dropdown-item" href="js4.html">TASK4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+    <div class="container my-5">
+        <p>kfsufwnf</p>
+    </div>
+    <div class="form-group-md-5">
+        <input type="text" class="form-control" id="name" name="name" placeholder="enter vailed expression">
+      </div>
+      <button class="btn btn-primary my-3" type="submit" onclick="submit()">solve</button>
+
+      <h3 id="h3">ans:</h3>
+</body>
+</html>

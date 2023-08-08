@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .dropdown:hover>.dropdown-menu,
+        .dropend:hover>.dropend-menu {
+            display: block;
+
+        }
+
+        .dropend:hover>.dropend-menu {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbr start -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color:#ade4f0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="100" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML&CSS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY1
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task1.html">TASK1</a></li>
+                                    <li><a class="dropdown-item" href="task2.html">TASK2</a></li>
+                                    <li><a class="dropdown-item" href="task3.html">TASK3</a></li>
+                                    <li><a class="dropdown-item" href="task4.html">TASK4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY2
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task5.html">TASK5</a></li>
+                                    <li><a class="dropdown-item" href="task6.html">TASK6</a></li>
+                                    <li><a class="dropdown-item" href="task7.html">TASK7</a></li>
+                                    <li><a class="dropdown-item" href="task8.html">TASK8</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            JAVA-SCRIPT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="js1.html">TASK1</a></li>
+                            <li><a class="dropdown-item" href="js2.html">TASK2</a></li>
+                            <li><a class="dropdown-item" href="js3.html">TASK3</a></li>
+                            <li><a class="dropdown-item" href="js4.html">TASK4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+    <div class="container my-5">
+        <p>kfsufwnf</p>
+    </div>
+
+    <div class="container-md-5 my-5" style="margin-left: 120px; margin-right: 120px;">
+        <h1>Bootcamp Registation Form</h1>
+    </div>
+    <div class="container-md-5" style="margin-left: 120px;">
+        <p>Complete this form to express interest in the upcoming web developement bootstrap</p>
+    </div>
+    <div class="congtainer-md-5" style="margin-left: 120px; margin-right: 120px;">
+        <h3>Login Details</h3>
+        <!-- <form> -->
+        <div class="mb-3">
+            <label for="e" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="e" aria-describedby="emailHelp" placeholder="mail@gamil.com">
+        </div>
+        <div class="mb-3">
+            <label for="m1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="m1" placeholder="password" required>
+
+        </div>
+        <div class="mb-3">
+            <label for="m2" class="form-label"> Re-enter Password</label>
+            <input type="password" class="form-control" id="m2" placeholder="Re-enter Password" required
+                onchange="Submit()">
+        </div>
+        <label id="pal"></label>
+    </div>
+    <div class="congtainer-md-5" style="margin-left: 120px; margin-right: 120px;">
+        <h3>Personal Information</h3>
+        <!-- <form> -->
+        <div class="mb-3">
+            <label for="text" class="name">Name</label>
+            <input type="teat" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="text">Roll No</label>
+            <input type="text" class="form-control" id="Roll_no" placeholder="University Roll No">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="text"> Branch</label>
+            <input type="text" class="form-control" id="Branch" placeholder="CSE">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="text">Phone number</label>
+            <input type="text" class="form-control" id="Phone" placeholder="Enter your Phone number">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="text">Section</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pal" id="t1" value="A">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    A
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pal" id="t2" value="B">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    B
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pal" id="t3" value="C">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    C
+                </label>
+            </div><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">I have read and agree to the term and
+                    conditions</label>
+            </div>
+        </div>
+        <div class="continaer">
+            <button class="btn btn-outline-danger m-3 float-end" type="reset" onclick="Reset()">Reset</button>
+            <button class="btn btn-outline-success m-3 float-end" type="submit" onclick="Submit()">Submit</button>
+        </div>
+
+    </div>
+
+    <script>
+        function Submit() {
+            let a = document.getElementById('m1');
+            let b = document.getElementById('m2');
+            if (a.value != b.value) {
+                document.getElementById('pal').innerHTML = "Enter same password";
+                document.getElementById('pal').style = "color:red;"
+            //     a.value = "";
+            //     b.value = "";
+             }
+            else{
+                document.getElementById('pal').innerHTML = "valid";
+                document.getElementById('pal').style = "color:green;"
+            }
+        }
+
+        function Reset() {
+            let ab = document.getElementsByName('flexRadioDefault');
+            for (let val of ab) {
+                if (val.checked) console.log(val.value);
+            }
+        }
+    </script>
+</body>
+
+</html>

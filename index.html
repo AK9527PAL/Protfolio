@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .dropdown:hover>.dropdown-menu,
+        .dropend:hover>.dropend-menu {
+            display: block;
+
+        }
+
+        .dropend:hover>.dropend-menu {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbr start -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color:#ade4f0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="100" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML&CSS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    WEEK1
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task1.html">TASK1</a></li>
+                                    <li><a class="dropdown-item" href="task2.html">TASK2</a></li>
+                                    <li><a class="dropdown-item" href="task3.html">TASK3</a></li>
+                                    <li><a class="dropdown-item" href="task4.html">TASK4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropend">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    WEEK2
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="task5.html">TASK5</a></li>
+                                    <li><a class="dropdown-item" href="task6.html">TASK6</a></li>
+                                    <li><a class="dropdown-item" href="task7.html">TASK7</a></li>
+                                    <li><a class="dropdown-item" href="task8.html">TASK8</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            JAVA-SCRIPT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="js1.html">TASK1</a></li>
+                            <li><a class="dropdown-item" href="js2.html">TASK2</a></li>
+                            <li><a class="dropdown-item" href="js3.html">TASK3</a></li>
+                            <li><a class="dropdown-item" href="js4.html">TASK4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+
+    <!-- banner start -->
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/1.jpg" class="img-fluid h-50 w-100" class="d-block w-100"   alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/2.jpg" class="img-fluid h-50 w-100" class="d-block w-100"   alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/4.png" class="img-fluid h-50 w-100" class="d-block w-100"   alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div><br><br><hr>
+
+    <!-- banner end -->
+
+    <!-- card start -->
+
+    <div class="container-fluid  my-5">
+        <h1 style="text-align: center; justify-content: center;" class="my-3">HTML&CSS DAY1</h1>
+        <div class="row gy-4 row-cols-1 row-cols-md-4 " style="padding-left: 70px;">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1.png" class="card-img-top" width="200px" height="200px"  alt="...">
+                    <div class="card-body" >
+                      <h5 class="card-title">Time-Table</h5>
+                      <p class="card-text">Click "TASK1" button and see your time table</p><br>
+                      <a href="task1.html" class="btn btn-primary">TASK1</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (1).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">CSS Design</h5>
+                      <p class="card-text">In this section asically we can learn hoe to devide row and col with the help of html and css</p>
+                      <a href="task2.html" class="btn btn-primary">TASK2</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (2).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bootstrap CSS</h5>
+                      <p class="card-text">In this section we learn how to add slider and card with the help of bootstrap </p>
+                      <a href="task3.html" class="btn btn-primary">TASK3</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (3).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Form</h5>
+                      <p class="card-text">In this section we will learn how to create form page using html and</p><br>
+                      <a href="task4.html" class="btn btn-primary">TASK4</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div><hr>
+
+
+
+    <div class="container-fluid  my-5">
+        <h1 style="text-align: center; justify-content: center;" class="my-3">HTML&CSS DAY2</h1>
+        <div class="row gy-4 row-cols-1 row-cols-md-4 " style="padding-left: 70px;">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (4).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Table</h5>
+                      <p class="card-text">In this section if we click on button you can see the table.</p>
+                      <a href="task5.html" class="btn btn-primary">TASK5</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (5).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Calculator </h5>
+                      <p class="card-text">Made a simple calculator using HTML, CSS and JavaScript.</p>
+                      <a href="task6.html" class="btn btn-primary">TASK6</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (6).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maths expression</h5>
+                      <p class="card-text">check mathematical expression using JavaScript.</p>
+                      <a href="task7.html" class="btn btn-primary">TASK7</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (7).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Achievement</h5>
+                      <p class="card-text">This is achievement page are build using Bootstrap and JavaScript</p>
+                      <a href="task8.html" class="btn btn-primary">TASK8</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div><hr>
+
+
+
+    <div class="container-fluid  my-5">
+        <h1 style="text-align: center; justify-content: center;" class="my-3">JAVA-SCRIPT</h1>
+        <div class="row gy-4 row-cols-1 row-cols-md-4 " style="padding-left: 70px;">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1.png" class="card-img-top" width="200px" height="200px"  alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sign-In</h5>
+                      <p class="card-text">Build sign page using Bootstrap and JavaScript</p>
+                      <a href="js1.html" class="btn btn-primary">JS-TASK1</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (1).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Age category</h5>
+                      <p class="card-text">Age define using Bootstrap and JavaScript.</p>
+                      <a href="js2.html" class="btn btn-primary">JS-TASK2</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (2).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bill Generator</h5>
+                      <p class="card-text">This is build for total money for easy way using JavaScript</p>
+                      <a href="js3.html" class="btn btn-primary">JS-TASK3</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/TASK 1 (3).png" class="card-img-top" width="200px" height="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Agree and Disagree</h5>
+                      <p class="card-text">Made Agree and Disagree button using bootstrap and JavaScript.</p>
+                      <a href="js4.html" class="btn btn-primary">JS-TASK4</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card end -->
+</body>
+
+</html>
